@@ -1,18 +1,31 @@
-## Getting Started
+# Concurrent Cab Booking System
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Overview
+This project is a simple simulation of a concurrent cab booking system, demonstrating how multiple users can book cabs simultaneously. The system showcases the use of **multithreading** and **synchronization** in **Java** to handle concurrent requests and simulate cab allocation based on availability.
 
-## Folder Structure
+The user interface is basic, built using **Java AWT** (Abstract Window Toolkit), which provides a simple way to interact with the system. The system runs as a **multi-threaded application**, simulating how cabs are allocated to users in real-time.
 
-The workspace contains two folders by default, where:
+## Key Features
+- **Simulated Cab Booking**: Multiple users can request cab bookings simultaneously.
+- **Threading & Synchronization**: Demonstrates the handling of concurrent booking requests.
+- **Basic User Interface**: Built using **Java AWT** for simplicity and functionality.
+- **MySQL Integration**: A `cabs.sql` file is included for setting up the database schema for cab availability and booking.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## How to Run
+1. **Setup Database**:  
+   Import the `cabs.sql` file into your **MySQL** database to create the necessary tables.
+   
+2. **Compile and Run**:  
+   - Clone the repository.  
+   ```bash
+   git clone <repository-url>
+   cd Concurrent-Cab-Booking-System
+   javac Main.java
+   java Main
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+**Limitations**
+Simulation Purposes: This project is a basic simulation and does not reflect real-world cab booking systems.
+Basic UI: The user interface is minimal and not intended for practical use in production environments.
+Concurrency Handling: Demonstrates threading and synchronization concepts but lacks scalability and performance optimization.
+**Note**
+This project aims to showcase my understanding of Java multithreading and synchronization. It is a learning exercise and can not be used as a production system.
